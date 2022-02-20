@@ -1,1 +1,73 @@
 /* Denna fil skall innehålla din CSS kod */
+body{
+background-color: #F1F1F1;
+
+}
+
+#wrapper {
+    display:grid;
+    grid-template-areas: 
+    'hd'
+    'mn'
+    ;
+    width:100vw;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    grid-area: hd;
+    opacity: 90%;
+    position: fixed;
+    width: 100%;
+}
+
+
+.header{
+    text-decoration: none;
+    color: #F1F1F1;
+
+}
+.header:hover{
+    color: lightgray;
+
+}
+
+li {
+    list-style: none;
+    color: #F1F1F1 ;
+    display: inline;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    padding:2rem;
+}
+
+#logga{
+    width: 13rem;
+    height: 8rem;
+
+}
+#logga:hover{
+    filter: opacity(80%);
+
+}
+
+main{
+height: 200rem;
+grid-area: mn;
+width: 100%;
+
+}
