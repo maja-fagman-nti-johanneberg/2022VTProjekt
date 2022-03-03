@@ -1,18 +1,21 @@
 /* Denna fil skall innehålla din CSS kod */
-body{
-background-color: #F1F1F1;
-padding:0;
-margin:0;
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F1F1;
+    padding: 0;
+    margin: 0;
 }
 
 #wrapper {
-    display:grid;
-    grid-template-areas: 
-    'hd'
-    'mn'
-    'ft';
-    width:98vw;
-    margin:auto;
+    display: grid;
+    grid-template-areas: 'hd' 'mn' 'ft';
+    width: 100vw;
+    margin: auto;
 }
 
 header {
@@ -21,30 +24,27 @@ header {
     grid-area: hd;
     opacity: 90%;
     position: fixed;
-    width: 98%;
+    width: 100%;
     height: 8rem;
     z-index: 2;
     top: 0rem;
     text-decoration: none;
     color: #F1F1F1;
     flex-wrap: wrap;
-
 }
 
-#header{
+#header {
     display: flex;
-    width:100%;
+    width: 100%;
 }
 
-
-.header:hover{
+.header:hover {
     color: lightgray;
-
 }
 
 li {
     list-style: none;
-    color: #F1F1F1 ;
+    color: #F1F1F1;
     display: inline;
     margin-left: 4rem;
     font-size: 1.5rem;
@@ -54,24 +54,23 @@ a {
     text-decoration: none;
 }
 
-
-ul{
+ul {
     list-style-type: none;
 }
 
-nav{
-    padding:2rem;
+nav {
+    padding: 2rem;
 }
 
-#logga{
+#logga {
     width: 10rem;
     height: 6rem;
     margin-top: 1rem;
-
+    margin-left: 1rem;
 }
-#logga:hover{
-    filter: opacity(80%);
 
+#logga:hover {
+    filter: opacity(80%);
 }
 
 .navbar {
@@ -90,12 +89,11 @@ nav{
     display: block;
     width: 2.5rem;
     height: 0.3rem;
-    margin: 0.2rem auto;
+    margin: 0.5rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #141414;
 }
-
 
 .nav-menu {
     display: flex;
@@ -107,62 +105,51 @@ nav{
     margin-left: 5rem;
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.6rem;
     font-weight: 500;
     color: #141414;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     opacity: 80%;
 }
 
-hr{
-border-top: 0.2rem solid #141414;
-border-radius: 10px;
-margin-top: 0.5rem;
-width: 80%;
-margin-left:auto;
-margin-right:auto;
-
-
-
+#hrtop {
+    border: 2px solid #141414;
+    border-radius: 10rem;
+    margin-top: 0.5rem;
+    width: 70%;
+    transform: translateY(2px);
+    margin-right: 0;
 }
 
-footer{
+#hrbottom {
+    border-top: 2px solid #141414;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
     height: 20rem;
     text-align: center;
     grid-area: ft;
-    
 }
 
-#footer{
+#footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 0.5rem;
-    margin-top: 1rem;
-
+    margin-top: 5rem;
 }
 
-#instagram{
-width: 5rem;
-
-}
-
-#behance{
-width: 7rem;
-    
-}
-
-#gmail{
-width: 5rem;
-        
-}
-
-#telefon{
-width: 5rem;
-            
+.footer img {
+    height: 5rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -177,20 +164,28 @@ width: 5rem;
         text-align: center;
         transition: 0.3s;
     }
-
     .nav-menu.active {
         left: 0;
     }
-
     .nav-item {
         margin: 2.5rem 0;
     }
-
     .hamburger {
         display: block;
         cursor: pointer;
     }
-
+    #hrtop {
+        opacity: 0;
+    }
+    .info-body {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+    .footer img {
+        height: 2.5rem;
+    }
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -198,40 +193,99 @@ width: 5rem;
 }
 
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(12.5px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-12.5px) rotate(-45deg);
 }
 
-
-main{
-    display: grid;
-height: 200rem;
-width: 99%;
-grid-area: mn;
-grid-template-areas: 
-'sr'
-'fa';
-
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+    grid-area: mn;
+    margin: 1rem;
 }
 
-#Showreal{
+#Showreal {
     background-color: blueviolet;
     grid-area: sr;
-    
     height: 30rem;
     border-radius: 10px;
-    margin-top: 8rem;
-    
-
+    margin-top: 9rem;
+    width: 100%;
 }
 
-#facts{
-    grid-area: fa;
+hr {
+    border: 2px solid #141414;
+    border-radius: 10rem;
+    margin-top: 0.5rem;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.info-header {
     display: flex;
-    position: relative;
-    top: 10rem;
-    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.info-header>h2 {
+    align-self: center;
+}
+
+.info-body {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.info-body>img {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 10px;
+    grid-area: onfoimg;
+}
+
+.info-body>p {
+    width: 60vw;
+    text-align: left;
+}
+
+.projects-body {
+    display: grid;
+    grid-template-areas: "p1 p2" "p1 p3";
+    gap: 3rem;
+    row-gap: 10rem;
+}
+
+.project-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-picture img {
+    width: 80%;
+}
+
+#project-picture-1 {
+    grid-area: p1;
+}
+
+#project-picture-2 {
+    grid-area: p2;
+}
+
+#project-picture-3 {
+    grid-area: p3;
 }
