@@ -24,7 +24,7 @@ header {
     grid-area: hd;
     opacity: 90%;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 8rem;
     z-index: 2;
     top: 0rem;
@@ -271,11 +271,11 @@ hr {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .project-picture img {
-    width: 80%;
+    width: 15rem;
+    border-radius: 10px;
 }
 
 #project-picture-1 {
