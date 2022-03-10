@@ -25,6 +25,14 @@ body {
     margin: auto;
 }
 
+#photo{
+    display: grid;
+    grid-template-areas: 'mn' 'ft';
+    width: 100vw;
+    margin: auto;
+
+}
+
 header {
     background-color: #F1F1F1;
     justify-content: space-between;
@@ -32,7 +40,7 @@ header {
     opacity: 90%;
     position: fixed;
     width: 100vw;
-    height: 8rem;
+    height: 5rem;
     z-index: 2;
     top: 0rem;
     text-decoration: none;
@@ -71,8 +79,8 @@ nav {
 
 #logga {
     width: 10rem;
-    height: 6rem;
-    margin-top: 1rem;
+    height: 4rem;
+    margin-top: 0.5rem;
     margin-left: 1rem;
 }
 
@@ -125,7 +133,7 @@ nav {
 #hrtop {
     border: 2px solid #141414;
     border-radius: 10rem;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     width: 70%;
     transform: translateY(2px);
     margin-right: 0;
@@ -355,6 +363,91 @@ hr {
     padding: 4rem;
 }
 
+#pmain{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    grid-area: mn;
+    margin: 0rem;
+
+}
+
+.photo-header {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-top: 15rem;
+    text-align: right;
+}
+
+.photo-p{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    text-align: right;
+
+}
+
+.photo-body {
+    display: grid;
+    grid-template-areas: 
+    'ph1 ph2'
+    'ph3 ph2'
+    'ph4 ph5'
+    'ph4 ph6'
+    ;
+    gap: 2rem;
+    row-gap: 8rem;
+    margin-bottom: 10rem;
+} 
+
+.photo-picture p {
+    width: 13rem;
+    text-align: center;
+}
+
+.photo-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.photo-picture img {
+    width: 15rem;
+    border-radius: 10px;
+}
+
+#photo-picture-1 {
+    grid-area: ph1;
+    margin-top: 5rem;
+}
+
+#photo-picture-2 {
+    grid-area: ph2;
+}
+
+#photo-picture-3 {
+    grid-area: ph3;
+}
+
+#photo-picture-4 {
+    grid-area: ph4;
+}
+
+#photo-picture-5 {
+    grid-area: ph5;
+}
+
+#photo-picture-6 {
+    grid-area: ph6;
+}
+
+
+
 
 @media only screen and (max-width: 900px) {
     .nav-menu {
@@ -372,7 +465,7 @@ hr {
         left: 0;
     }
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
     }
     .hamburger {
         display: block;
@@ -405,6 +498,26 @@ hr {
         display: grid;
         grid-template-areas: 'a1 a2' 'a3 b1' 'b2 b3';
     }
+
+    .photo-header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .photo-body {
+        display: grid;
+        grid-template-areas: 
+        'ph1'
+        'ph2'
+        'ph3'
+        'ph4'
+        'ph5'
+        'ph6'
+        ;
+    } 
 
     #footer{
         display: grid;
