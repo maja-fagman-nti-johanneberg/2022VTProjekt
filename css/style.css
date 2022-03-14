@@ -260,6 +260,7 @@ hr {
 .info-body>p {
     width: 60vw;
     text-align: left;
+    margin-top: 3rem;
 }
 
  .projects-body {
@@ -268,6 +269,8 @@ hr {
     'p1 p3';
     gap: 2rem;
     row-gap: 8rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 } 
 
 .project-picture p {
@@ -386,7 +389,7 @@ hr {
     flex-direction: column;
     margin-right: 20%;
     text-align: right;
-
+    width: 18rem;
 }
 
 .photo-body {
@@ -397,8 +400,8 @@ hr {
     'ph4 ph5'
     'ph4 ph6'
     ;
-    gap: 2rem;
-    row-gap: 8rem;
+    gap: 1rem;
+    row-gap: 4rem;
     margin-bottom: 10rem;
 } 
 
@@ -447,7 +450,79 @@ hr {
 }
 
 
+#imain{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    grid-area: mn;
+    margin: 0rem;
 
+}
+
+.ai-header {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-top: 15rem;
+    text-align: right;
+}
+
+.ai-p{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    text-align: right;
+
+}
+
+.ai-body {
+    display: grid;
+    grid-template-areas: 
+    'ph1 ph2'
+    'ph3 ph2'
+    'ph3 ph4'
+    ;
+    gap: 2rem;
+    row-gap: 8rem;
+    margin-bottom: 10rem;
+} 
+
+.ai-photo p {
+    width: 13rem;
+    text-align: center;
+}
+
+.ai-photo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ai-photo img {
+    width: 15rem;
+    border-radius: 10px;
+}
+
+#ai-photo-1 {
+    grid-area: ph1;
+    margin-top: 5rem;
+}
+
+#ai-photo-2 {
+    grid-area: ph2;
+}
+
+#ai-photo-3 {
+    grid-area: ph3;
+}
+
+#ai-photo-4 {
+    grid-area: ph4;
+}
 
 @media only screen and (max-width: 900px) {
     .nav-menu {
@@ -480,6 +555,11 @@ hr {
         flex-wrap: wrap;
         margin-top: 1rem;
     }
+
+    .info-body>p{
+        margin-top: -2rem;
+
+    }
     .footer img {
         height: 2.5rem;
         margin-top: 1.5rem;
@@ -489,11 +569,15 @@ hr {
         grid-template-areas: 'p1'
         'p2'
         'p3';
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     #amain>h2 {
         text-align: center;
         margin: 0;
     }
+
+
     #experiencep {
         display: grid;
         grid-template-areas: 'a1 a2' 'a3 b1' 'b2 b3';
@@ -524,7 +608,7 @@ hr {
         grid-template-areas: 'is be'
         'gm te';
         margin-top: 1rem;
-    
+        margin-left: 0rem;
 
     }
 }
