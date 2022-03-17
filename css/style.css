@@ -220,6 +220,7 @@ footer {
     border-radius: 10px;
     margin-top: 9rem;
     width: 100%;
+    box-shadow: 0 3px 10px 0 black;
 }
 
 hr {
@@ -366,15 +367,90 @@ hr {
     padding: 4rem;
 }
 
+
+
+
 #pmain{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+   
+    align-content: flex-end;
+    flex-wrap: wrap;
     width: 100%;
     grid-area: mn;
     margin: 0rem;
 
 }
+
+#tmain{
+    display: grid;
+    grid-template-areas: 't1 t2' ;
+    width: 100%;
+    grid-area: mn;
+    margin: 1rem;
+
+}
+
+#test1{
+grid-area: t1;
+display: grid;
+grid-template-areas: 
+'tp1' 
+'tp2' 
+'pt3';
+
+}
+
+#test2{
+    grid-area: t2;
+    display: grid;
+    grid-template-areas:
+    'tp4' 
+    'tp5' 
+    'tp6' ;
+    
+}
+
+.test-picture1 img {
+    width: 15rem;
+    border-radius: 10px;
+}
+
+.test-picture2 img {
+    width: 15rem;
+    border-radius: 10px;
+}
+
+#test-picture-1{
+grid-area: tp1;
+height: 10rem;
+
+}
+
+#test-picture-2{
+    grid-area: tp2;
+    
+    }
+
+#test-picture-3{
+    grid-area: tp3;
+        
+    }   
+
+#test-picture-4{
+    grid-area: tp4;
+        
+    }
+
+#test-picture-5{
+    grid-area: tp5;
+        
+    }
+
+#test-picture-6{
+    grid-area: tp6;
+        
+    }
 
 .photo-header {
     display: flex;
@@ -385,11 +461,15 @@ hr {
 }
 
 .photo-p{
-    display: flex;
-    flex-direction: column;
-    margin-right: 20%;
-    text-align: right;
-    width: 18rem;
+    border:1px blue solid;
+    /* margin-right: 20%; */
+    /* display: flex; */
+        width: 100%;
+        display: flex;
+}
+
+.photo-p p {
+    width:30%;
 }
 
 .photo-body {
@@ -602,6 +682,18 @@ hr {
         'ph6'
         ;
     } 
+
+    .photo-p{
+        border:1px blue solid;
+        /* margin-right: 20%; */
+        /* display: flex; */
+            width: 100%;
+            display: flex;
+    }
+    
+    .photo-p p {
+        width:30%;
+    }
 
     #footer{
         display: grid;
