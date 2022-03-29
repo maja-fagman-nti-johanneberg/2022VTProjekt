@@ -205,6 +205,7 @@ footer {
 
 .footer>p {
     margin-top: 0.3rem;
+    color: #141414;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -222,7 +223,7 @@ footer {
 #imain {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
     width: 100%;
     grid-area: mn;
     margin: 0rem;
@@ -231,7 +232,7 @@ footer {
 #showreel video{
     width: 100%;
     height: 100%;
-    margin-top: 6rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
 
 }
@@ -251,10 +252,13 @@ hr {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    margin-top: 4rem;
+    color: #141414;
 }
 
 .info-header>h2 {
     align-self: center;
+    color: #141414;
 }
 
 .info-body {
@@ -277,47 +281,90 @@ hr {
     text-align: left;
     margin-top: 5rem;
     margin-left: 2rem;
+    color: #141414;
 }
 
- .projects-body {
+.in-body{
     display: grid;
-    grid-template-areas: 'p1 p2'
-    'p1 p3';
-    row-gap: 8rem;
-    margin: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-} 
+    grid-template-areas:
+    't1 t2'
+    'ft ft';
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
 
-.project-picture p {
-    width: 13rem;
-    text-align: center;
 }
 
-.project-picture {
-    display: flex;
+#in1{
+    grid-area: t1;
+    display: block;
+    margin-top: 10rem;
     flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+    justify-self: center;
+    
 }
 
-.project-picture img {
-    width: 15rem;
+#in2{
+    grid-area: t2;
+    display: block;
+    padding-top: 5rem;
+    flex-direction: column;
+    justify-self: center;
+        
+}
+
+div #in{
+    margin-bottom: 3rem;
+
+}
+
+#in-header{
+grid-area: th;
+margin-top: 5rem;
+margin-bottom: 1rem;
+color: #141414;
+
+}
+
+#in-p{
+    grid-area: tp;
+   width: 20rem;
+   margin-bottom: 12rem;
+   color: #141414;
+}
+
+.in-body p{
+    margin-bottom: 7rem;
+    width: 20rem;
+    color: #141414;
+
+}
+
+.in-body img{
+    height: 30rem;
     border-radius: 10px;
+
+
 }
 
-#project-picture-1 {
-    grid-area: p1;
+#in-picture-1{
+grid-area: tp1;
+
 }
 
-#project-picture-2 {
-    grid-area: p2;
-}
+#in-picture-2{
+    grid-area: tp2;
+    
+    }
 
-#project-picture-3 {
-    grid-area: p3;
-}
+#in-picture-3{
+    grid-area: tp3;
+        
+    }   
+
+#in-picture-4{
+    grid-area: tp4;
+        
+    }
 
 #amain {
     display: flex;
@@ -330,7 +377,7 @@ hr {
 }
 
 #amain>h2 {
-    margin-left: 5rem;
+    margin-left: 8rem;
     font-size: 3rem;
 }
 
@@ -343,6 +390,7 @@ hr {
     margin: 2rem;
     margin: 2rem;
     margin-top: 4rem;
+    color: #141414;
 }
 
 #experiencep {
@@ -350,6 +398,7 @@ hr {
     grid-template-areas: 'a1 a2 a3' 'b1 b2 b3';
     text-align: center;
     font-size: 1.5rem;
+    margin-bottom: 10rem;
 }
 
 .a1 {
@@ -411,7 +460,7 @@ justify-self: center;
 }
 
 div #photo{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 
 }
 
@@ -419,18 +468,21 @@ div #photo{
 grid-area: th;
 margin-top: 5rem;
 margin-bottom: 1rem;
+color: #141414;
 
 }
 
 #photo-p{
     grid-area: tp;
    width: 20rem;
-   margin-bottom: 7rem;
+   margin-bottom: 12rem;
+   color: #141414;
 }
 
 .photo-body p{
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     width: 20rem;
+    color: #141414;
 
 }
 
@@ -510,18 +562,21 @@ div #ai{
 grid-area: th;
 margin-top: 5rem;
 margin-bottom: 1rem;
+color: #141414;
 
 }
 
 #ai-p{
     grid-area: tp;
    width: 20rem;
-   margin-bottom: 7rem;
+   margin-bottom: 12rem;
+   color: #141414;
 }
 
 .ai-body p{
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     width: 20rem;
+    color: #141414;
 
 }
 
@@ -590,6 +645,7 @@ grid-area: tp1;
     grid-area: th;
     margin-top: 5rem;
     margin-bottom: 1rem;
+    color: #141414;
     
     }
     
@@ -597,11 +653,13 @@ grid-area: tp1;
         grid-area: tp;
        width: 20rem;
        margin-bottom: 7rem;
+       color: #141414;
     }
     
     .d-body p{
         margin-bottom: 5rem;
         width: 25rem;
+        color: #141414;
     
     }
     
@@ -654,9 +712,10 @@ grid-area: tp1;
         opacity: 0;
         margin-top: 0rem;
         margin-bottom: 0rem;
+        width: 0;
+        height: 0;
     
     }
-
 
     .info-body {
         width: 100%;
@@ -666,28 +725,51 @@ grid-area: tp1;
     }
 
     .info-body>p{
-        margin-top: 0rem;
-
-    }
-
-
-    .footer img {
-        height: 2.5rem;
-        margin-top: 1.5rem;
-    }
-    .projects-body {
-        display: grid;
-        grid-template-areas: 'p1'
-        'p2'
-        'p3';
         margin-top: 1rem;
-        margin-bottom: 1rem;
+
     }
+
+    .in-body{
+        display: grid;
+        grid-template-areas:
+        't2'
+        't1'
+        'ft';
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: none;
+        grid-template-columns: 0;
+        gap: 0;
+    
+    }
+    
+
+#in1{
+    margin-top: 0rem;
+    
+}
+
+#in2{
+    padding-top: 0rem;
+}
+    #in-header{
+        justify-content: center;
+        text-align: center;
+        margin-top: 5rem;
+        
+        }
+
+    #in-p{
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0rem;
+
+    }
+  
     #amain>h2 {
         text-align: center;
         margin: 0;
     }
-
 
     #experiencep {
         display: grid;
@@ -760,8 +842,7 @@ grid-area: tp1;
     #d1{
         margin-top: 0rem;
         
-        }
-
+    }
 
     #d-header{
         justify-content: center;
@@ -788,6 +869,11 @@ grid-area: tp1;
         margin-top: 1rem;
         margin-left: 0rem;
 
+    }
+
+    .footer img {
+        height: 2.5rem;
+        margin-top: 1.5rem;
     }
 
 
