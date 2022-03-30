@@ -270,8 +270,7 @@ hr {
 }
 
 .info-body>img {
-    width: 15rem;
-    height: 20rem;
+    width: 17rem;
     border-radius: 10px;
     grid-area: onfoimg;
 }
@@ -387,8 +386,7 @@ grid-area: tp1;
 
 #experience>p {
     display: block;
-    margin: 2rem;
-    margin: 2rem;
+    margin: 1rem;
     margin-top: 4rem;
     color: #141414;
 }
@@ -397,38 +395,37 @@ grid-area: tp1;
     display: grid;
     grid-template-areas: 'a1 a2 a3' 'b1 b2 b3';
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .a1 {
     grid-area: a1;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .a2 {
     grid-area: a2;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .a3 {
     grid-area: a3;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .b1 {
     grid-area: b1;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .b2 {
     grid-area: b2;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .b3 {
     grid-area: b3;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .photo-body{
