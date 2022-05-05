@@ -25,6 +25,11 @@ body {
     margin: auto;
 }
 
+#experiencep h3{
+font-size: 20px;
+
+}
+
 #photo{
     display: grid;
     grid-template-areas: 'mn' 'ft';
@@ -158,7 +163,7 @@ nav {
     border-top: 2px solid #141414;
     border-radius: 10px;
     margin-top: 0.5rem;
-    width: 50%;
+    width: 70%;
     margin-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
@@ -231,9 +236,10 @@ footer {
 
 #showreel video{
     width: 100%;
-    height: 100%;
-    margin-top: 2rem;
+    height: 70%;
+    margin-top: 5.5rem;
     margin-bottom: 5rem;
+    background-color: #141414;
 
 }
 
@@ -242,7 +248,7 @@ hr {
     border-radius: 10rem;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
-    width: 40%;
+    width: 50%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -252,7 +258,7 @@ hr {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
     color: #141414;
 }
 
@@ -266,6 +272,7 @@ hr {
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    margin-top: 3rem;
    
 }
 
@@ -279,7 +286,7 @@ hr {
     width: 60vw;
     text-align: left;
     margin-top: 5rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     color: #141414;
 }
 
@@ -365,6 +372,46 @@ grid-area: tp1;
         
     }
 
+    .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 #amain {
     display: flex;
     flex-direction: column;
@@ -376,7 +423,7 @@ grid-area: tp1;
 }
 
 #amain>h2 {
-    margin-left: 8rem;
+    margin-left: 7rem;
     font-size: 3rem;
 }
 
@@ -465,6 +512,7 @@ div #photo{
 grid-area: th;
 margin-top: 5rem;
 margin-bottom: 1rem;
+margin-left: 0.7rem;
 color: #141414;
 
 }
@@ -480,6 +528,8 @@ color: #141414;
     margin-bottom: 7rem;
     width: 20rem;
     color: #141414;
+    margin-top: 1rem;
+    margin-left: 0.7rem;
 
 }
 
@@ -559,6 +609,7 @@ div #ai{
 grid-area: th;
 margin-top: 5rem;
 margin-bottom: 1rem;
+margin-left: 0.7rem;
 color: #141414;
 
 }
@@ -574,6 +625,8 @@ color: #141414;
     margin-bottom: 7rem;
     width: 20rem;
     color: #141414;
+    margin-left: 0.7rem;
+    margin-top: 1rem;
 
 }
 
@@ -642,6 +695,7 @@ grid-area: tp1;
     grid-area: th;
     margin-top: 5rem;
     margin-bottom: 1rem;
+    margin-left: 0.7rem;
     color: #141414;
     
     }
@@ -656,6 +710,8 @@ grid-area: tp1;
     .d-body p{
         margin-bottom: 5rem;
         width: 25rem;
+        margin-left: 0.7rem;
+        margin-top: 1rem;
         color: #141414;
     
     }
